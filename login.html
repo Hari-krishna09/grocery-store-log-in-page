@@ -1,0 +1,61 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Log In Page
+        </title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="icon" href="rlogo.png">
+    </head>
+    <body>
+        <section>
+            <div class="imgbox">
+                <img src="log.jpg">
+            </div>
+            <div class="cntbox">
+                <div class="frmbox">
+                    <h2>Log In</h2>
+                    <form>
+                        <div class="inputbx">
+                            <span>Username</span>
+                            <input type="text" name="" id="email" placeholder="Username, or email" required>
+                        </div>
+                        <div class="inputbx">
+                            <span>Password</span>
+                            <input type="password" name="" id="password" placeholder="Password" required>
+                        </div>
+                        <div class="remeber">
+                            <label><input type="checkbox" name=""> Remember me</label>
+                        </div><br>
+                        <div class="inputbx">
+                            <input type="button" value="Log in" name="" onclick="auth()">
+                        </div>
+                        <div class="inputbx">
+                            <p>Don't have an account? <a href="#">Sign up</a></p>
+                        </div>
+                    </form>
+                    <h3>Login with social media</h3>
+                    <ul class="sci">
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                    </ul>
+                </div>
+            </div> 
+        </section>
+        <script>
+            function auth(){
+                var email=document.getElementById("email").value;
+                var password=document.getElementById("password").value;
+                if(email=="hari"&& password=="123"){
+                    window.location.href="main.html";
+                }
+                else{
+                    alert("Invalid Information ");
+                    return;
+                }
+            }
+        </script>
+    </body>
+</html>
